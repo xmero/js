@@ -1,9 +1,5 @@
 // Improve the previous function to add a random number between 0 and 1000 every 7 characters
 
-function getRandomArbitrary (min, max) {
-  return Math.random() * (max - min) + min
-}
-
 function encodeWordPlus (s) {
   var decomp = []
   var up = s.toUpperCase()
@@ -27,7 +23,7 @@ function encodeWordPlus (s) {
         break
     }
     if (i % 7 === 0 && i !== 0) {
-      decomp.splice(i, 0, getRandomArbitrary(-1, 1001))
+      decomp.splice(i, 0, (1000 * Math.random()))
     }
   }
   return decomp
