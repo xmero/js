@@ -1,4 +1,4 @@
-// Improve the previous function to add a random number between 0 and 1000 every 7 characters.
+// Improve the previous function to add a random number between 0 and 1000 every 7 characters
 
 function encodeWordPlus (s) {
   var decomp = []
