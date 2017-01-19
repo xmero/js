@@ -13,3 +13,14 @@ function findLongestWord (arrayToCompare) {
 }
 
 findLongestWord(arrayToCompare)
+
+// V2
+
+var arrayToCompare = ['tomatoe', 'potatoe', 'toe', 'shoe', 'tippytoe', 'mistletoe']
+var theLongestWord = ''
+
+function findLongestWord (word) {
+  return word.length
+}
+
+Math.max.apply(null, (arrayToCompare.map(findLongestWord)))
