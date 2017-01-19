@@ -11,3 +11,17 @@ function reverse (original) {
 }
 
 reverse('tomatoe')
+
+// v2
+
+function reverse (original) {
+  var reversed = []
+
+  for (var i = 0; i < original.length; i++) {
+    reversed.unshift(original[i])
+  }
+
+  return reversed.join('')
+}
+
+reverse('tomatoe')
