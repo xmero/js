@@ -23,7 +23,7 @@ function encodeWordPlus (s) {
         break
     }
     if (i % 7 === 0 && i !== 0) {
-      decomp.splice(i, 0, (1000 * Math.random()))
+      decomp.splice(i, 0, Math.floor(1000 * Math.random()))
     }
   }
   return decomp
