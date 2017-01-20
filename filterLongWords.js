@@ -2,7 +2,7 @@
 
 var arrayToCompare = ['tomatoe', 'potatoe', 'toe', 'shoe', 'tippytoe', 'mistletoe']
 
-function findLongestWord (arrayToCompare, desiredLength) {
+function filterLongWords (arrayToCompare, desiredLength) {
   var wordList = []
   for (var i = 0; i < arrayToCompare.length; i++) {
     if (arrayToCompare[i].length >= (desiredLength)) {
@@ -12,7 +12,7 @@ function findLongestWord (arrayToCompare, desiredLength) {
   return wordList
 }
 
-findLongestWord(arrayToCompare, 4)
+filterLongWords(arrayToCompare, 4)
 
 // V2
 
@@ -24,3 +24,15 @@ function isLongerThan (word) {
 }
 
 arrayV2.filter(isLongerThan)
+
+// V3
+
+var arrayV3 = ['tomatoe', 'potatoe', 'toe', 'shoe', 'tippytoe', 'mistletoe']
+
+function filterLongWordsV3 (arrayV2, maxLen) {
+  function isLongerThan (word) {
+    return word.length >= maxLen
+  }
+  return arrayV3.filter(isLongerThan)
+}
+filterLongWordsV3(arrayV3, 5)
