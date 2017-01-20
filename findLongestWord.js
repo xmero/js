@@ -9,7 +9,7 @@ function findLongestWord (arrayToCompare) {
       theLongestWord = arrayToCompare[i]
     }
   }
-  return theLongestWord
+  return theLongestWord.length
 }
 
 findLongestWord(arrayToCompare)
