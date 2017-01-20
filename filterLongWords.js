@@ -20,9 +20,7 @@ var arrayV2 = ['tomatoe', 'potatoe', 'toe', 'shoe', 'tippytoe', 'mistletoe']
 var maxLen = 4
 
 function isLongerThan (word) {
-  if (word.length >= maxLen) {
-    return word
-  }
+  return word.length >= maxLen
 }
 
 arrayV2.filter(isLongerThan)
