@@ -1,0 +1,28 @@
+// Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
+
+var arrayToCompare = ['tomatoe', 'potatoe', 'toe', 'shoe', 'tippytoe', 'mistletoe']
+
+function findLongestWord (arrayToCompare, desiredLength) {
+  var wordList = []
+  for (var i = 0; i < arrayToCompare.length; i++) {
+    if (arrayToCompare[i].length >= (desiredLength)) {
+      wordList.unshift(arrayToCompare[i])
+    }
+  }
+  return wordList
+}
+
+findLongestWord(arrayToCompare, 4)
+
+// V2
+
+var arrayV2 = ['tomatoe', 'potatoe', 'toe', 'shoe', 'tippytoe', 'mistletoe']
+var maxLen = 4
+
+function isLongerThan (word) {
+  if (word.length >= maxLen) {
+    return word
+  }
+}
+
+arrayV2.filter(isLongerThan)
