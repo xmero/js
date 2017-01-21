@@ -35,4 +35,5 @@ function filterLongWordsV3 (arrayV2, maxLen) {
   }
   return arrayV3.filter(isLongerThan)
 }
+
 filterLongWordsV3(arrayV3, 5)
