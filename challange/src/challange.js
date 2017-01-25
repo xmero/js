@@ -1,5 +1,5 @@
 
-function printDiamond (letter) {
+function mysteryChallange (letter) {
   if (typeof letter !== 'string' || letter.length > 1) { return 'Error wrong input' }
   var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
   var n = findPosition(letter) + 1
